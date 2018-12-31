@@ -1,3 +1,42 @@
-body {
-    color: red;
+.resume-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: "header header"
+                         "experience info";
+
+    margin: 2% 4%;
+    border: 2px solid #303030;
 }    
+
+.resume-header {
+    grid-area: header;
+    background-color: #e34949;
+    color: white; 
+    padding: 1.2rem 0 .9rem .9rem;
+}
+
+.header__name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header__position {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: .4rem;
+}
+
+.resume-experience {
+    grid-area: experience;
+    padding: .9rem .8rem 0 .8rem;
+    color: #4b4b4b;
+}
+
+.resume-info {
+    grid-area: info;
+    background-color: #303030;
+    color: white;
+    padding: .9rem .8rem 0 .8rem;
+}
